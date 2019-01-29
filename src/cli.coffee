@@ -33,6 +33,17 @@ optAliases =
   v: '--version'
   w: '--watch'
 
+# option 'parse', 'compile', 'optimise', 'debug', 'literate', 'raw', 'version', 'help'
+# parameter 'cli', 'input', 'nodejs', 'output', 'watch'
+
+# if escodegen?
+#   option 'bare', 'js', 'source-map', 'eval', 'repl'
+#   parameter 'source-map-file', 'require'
+#   if esmangle?
+#     option 'minify'
+
+# if cscodegen?
+#   option 'cscodegen'
 option 'parse', 'compile', 'optimise', 'debug', 'literate', 'raw', 'version', 'help'
 parameter 'cli', 'input', 'nodejs', 'output', 'watch'
 

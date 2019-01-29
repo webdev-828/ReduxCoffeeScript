@@ -23,16 +23,6 @@ require.extensions['.litcoffee'] = (module, filename) ->
 
 # patch child_process.fork to default to the coffee binary as the execPath for coffee/litcoffee files
 {fork} = child_process
-  # unless fork.coffeePatched
-  #   coffeeBinary = path.resolve 'bin', 'coffee'
-  #   child_process.fork = (file, args = [], options = {}) ->
-  #     if (path.extname file) in ['.coffee', '.litcoffee']
-  #       if not Array.isArray args
-  #         args = []
-  #         options = args or {}
-  #       options.execPath or= coffeeBinary
-  #     fork file, args, options
-  #   child_process.fork.coffeePatched = yes
   unless fork.coffeePatched
   coffeeBinary = path.resolve 'bin', 'coffee'
   child_process.fork = (file, args = [], options = {}) ->
